@@ -15,7 +15,9 @@ const IndexPage = () => {
     <main style={pageStyles}>
       <title>Oidom assignment</title>
       <a href="https://news.ycombinator.com/">
-        <h1>Hacker News</h1>
+        <h1>
+          Hacker News stories with score more than 70 within the last 4 hours:
+        </h1>
       </a>
       <StoriesBox />
     </main>

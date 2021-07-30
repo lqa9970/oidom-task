@@ -4,7 +4,7 @@ import { StoryWrapper, StoryTitle } from "../styles/StoryStyles";
 import { mapTime, isLessThan4Hours } from "../components/mapTime";
 
 const Story = ({ storyId }) => {
-  const [story, setStory] = useState([]);
+  const [story, setStory] = useState({});
 
   useEffect(() => {
     getStory(storyId).then((data) => data && data.url && setStory(data));
